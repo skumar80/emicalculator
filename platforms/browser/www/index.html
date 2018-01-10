@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="OnsenUI/css/onsenui.css">
+    <link rel="stylesheet" href="OnsenUI/css/onsen-css-components.min.css">
+    <script src="OnsenUI/js/onsenui.min.js"></script>
+    <script src="amortization.js"></script>
+    <style>
+        #datatable {
+            margin: 0 auto;
+            font-size: 12px;            
+            width: 99%;
+        }
+
+        tr:nth-child(even) {
+            background: rgb(226, 226, 226)
+        }
+
+        tr:nth-child(odd) {
+            background: rgb(255, 255, 255)
+        }
+    </style>
+</head>
+
+<body>
+    <ons-page>
+        <ons-toolbar>
+            <div class="center">EMI Calculaor</div>
+        </ons-toolbar>
+        <div style="text-align: center; margin-top: 30px;">
+            <p>
+                <ons-input id="loanamount" modifier="underbar" placeholder="Loan Amount" float></ons-input>
+            </p>
+            <p>
+                <ons-input id="roi" modifier="underbar" placeholder="Rate Of Interest(%)" float></ons-input>
+            </p>
+            <p>
+                <ons-input id="nom" modifier="underbar" placeholder="No. of Months" float></ons-input>
+            </p>
+            <p style="margin-top: 30px;">
+                <ons-button onclick="calculate()">CALCULATE</ons-button>
+                <ons-button onclick="reset()">RESET</ons-button>
+            </p>
+        </div>
+        <div id="result" style="text-align: center; margin-top: 10px;">
+        </div>
+    </ons-page>
+</body>
+
+</html>
