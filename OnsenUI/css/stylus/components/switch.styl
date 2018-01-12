@@ -16,7 +16,6 @@
 *
 */
 
-
 // NOTE: You can't use @extend that break component independent and topdoc parsing.
 
 // internal variables
@@ -114,8 +113,8 @@ switch__toggle()
   top 2px
   transition-property all
   transition-duration 0.35s
-  transition-timing-function cubic-bezier(.59,.01,.5,.99)
-  box-shadow 0 0 0 1px #E4E4E4, 0 3px 2px rgba(0,0,0,0.25)
+  transition-timing-function cubic-bezier(.59, .01, .5, .99)
+  box-shadow 0 0 0 1px #E4E4E4, 0 3px 2px rgba(0, 0, 0, 0.25)
 
 .switch--active .switch__handle
   transition-duration 0s
@@ -126,7 +125,7 @@ input:checked + .switch__toggle
 
 input:checked + .switch__toggle .switch__handle
   left 21px
-  box-shadow 0 3px 2px rgba(0,0,0,0.25)
+  box-shadow 0 3px 2px rgba(0, 0, 0, 0.25)
 
 input:disabled + .switch__toggle
   disabled()
@@ -213,11 +212,11 @@ input:disabled + .switch__toggle
     height 100%
     border-radius 50%
     z-index -1
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.12)
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.12)
     transition box-shadow 0.1s linear
 
   &.switch--active .switch__handle:before
-    box-shadow: 0px 0px 0px 14px rgba(0,0,0,0.12)
+    box-shadow: 0px 0px 0px 14px rgba(0, 0, 0, 0.12)
 
   &.switch--active input:checked + .switch__toggle .switch__handle:before
     box-shadow: 0px 0px 0px 14px alpha(var-material-switch-active-thumb-color, 0.2)
